@@ -1,0 +1,165 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+    border: solid 3px rgba(18, 136, 126, 0.678);
+    padding-left: 7px;
+    padding-right: 7px;
+    display: block;
+    width: fit-content;
+    border-radius: 30px;
+    color: rgb(18, 136, 126);
+    font-size: 200%;
+}
+h4 {
+    color: rgb(18, 136, 126);
+}
+#changeTheme {
+    background-color: transparent;
+    border: none;
+}
+#changeTheme:hover {
+    cursor: pointer;
+}
+#day {
+    display: none;
+    width: 10%;
+    max-width: 125px;
+    min-width: 75px;
+    margin: 0 0 0 25px;
+}
+#nightmode {
+    width: 10%;
+    max-width: 125px;
+    min-width: 75px;
+    margin: 0 0 0 25px;
+    display: block;
+}
+#nightmode:hover {
+    filter: opacity(50%);
+}
+#result {
+    color: rgb(71, 71, 71);
+    background-color: rgba(18, 136, 126, 0.192);
+    width: 5%;
+    min-width: 5%;
+    text-align: center;
+    width: fit-content;
+    margin: 3px;
+}
+#massaElemento {
+    border: solid 2px rgba(18, 136, 126, 0.678);
+    width: 50%;
+    height: 25px;
+    max-width: 250px;
+    margin: 5px 5px 5px 0;
+}
+#elemento {
+    border: solid 2px rgba(18, 136, 126, 0.678);
+    margin: 5px;
+}
+#elemento:hover {
+    cursor: pointer;
+}
+
+#add {
+    border: solid 2px rgba(18, 136, 126, 0.678);
+    background-color: rgba(18, 136, 126, 0.192);
+    margin: 5px;
+}
+#add:hover {
+    cursor: pointer;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+}
+#input {
+    display: flex;
+}
+p {
+    color: rgb(71, 71, 71);
+    margin: 3px 0;
+}
+#trova {
+    border: solid 2px rgba(18, 136, 126, 0.678);
+    background-color: rgba(18, 136, 126, 0.192);
+    display: block;
+    height: 35px;
+    width: 75px;
+    margin: 10px 0;
+}
+#trova:hover {
+    cursor: pointer;
+}
+#periodic_table {
+    width: 95%;
+    margin: 10px 0;
+    padding: 5px;
+    border: solid 2px rgba(18, 136, 126, 0.678);
+}
+.classes {
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.classes:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#non_metalli {
+    background-color: rgb(237, 255, 171);
+    border: solid 2px rgb(163, 199, 31);
+    color: rgb(104, 126, 24);
+}
+#gas_nobili {
+    background-color: rgb(197, 255, 250);
+    border: solid 2px rgb(70, 172, 163);
+    color: rgb(54, 131, 124);
+}
+#metalli_alcalini {
+    background-color: rgb(255, 176, 176);
+    border: solid 2px rgb(224, 47, 47);;
+    color: rgb(143, 18, 18);
+}
+#metalli_alcalino_terrosi {
+    background-color: rgb(255, 229, 172);
+    border: solid 2px rgb(214, 145, 24);
+    color: rgb(111, 84, 14);
+}
+#metalloidi {
+    background-color: rgb(182, 197, 148);
+    border: solid 2px rgb(137, 155, 94);
+    color: rgb(84, 95, 58);
+}
+#post_metalli {
+    background-color: rgb(170, 170, 170);
+    border: solid 2px rgb(90, 90, 90);
+    color: rgb(31, 31, 31);
+}
+#trans_metalli {
+    background-color: rgb(255, 201, 201);
+    border: solid 2px rgb(255, 147, 147);
+    color: rgb(180, 104, 104);
+}
+#lantanoidi {
+    background-color: rgb(250, 196, 255);
+    border: solid 2px rgb(199, 109, 207);
+    color: rgb(132, 64, 138);
+}
+#attinoidi {
+    background-color: rgb(255, 139, 197);
+    border: solid 2px rgb(172, 57, 114);
+    color: rgb(104, 20, 62);
+}
+#unknown_elements {
+    background-color: rgb(236, 236, 236);
+    border: solid 2px rgb(153, 153, 153);
+    color: rgb(102, 102, 102);
+}
+#added {
+    color: rgb(71, 71, 71);
+    background-color: rgba(18, 136, 126, 0.192);
+    margin: 5px 0;
+}

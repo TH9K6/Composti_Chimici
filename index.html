@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang = it>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="CompostiChimici.css" rel="stylesheet" id="stylesheet">
+        <title>Composti Chimici</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="container">
+            <button onclick="changeTheme()" id="changeTheme" class="item"><img alt="Change Theme" src="nightmode.png" id="nightmode"><img alt="changeTheme" src="day.png" id="day"></button>
+            <h3>Composti Chimici</h3>
+            <div id="input">
+                <input type="number" id="massaElemento">
+                <select id="elemento">
+                    <option disabled selected id="placeholder">Elemento</option>
+                    <option value="H" class="non_metal">H</option>
+                    <option value="He" class="noble_gas">He</option>
+                    <option value="Li" class="alkali_metal">Li</option>
+                    <option value="Be" class="alkaline_earth_metal">Be</option>
+                    <option value="B" class="metalloid">B</option>
+                    <option value="C" class="non_metal">C</option>
+                    <option value="N" class="non_metal">N</option>
+                    <option value="O" class="non_metal">O</option>
+                    <option value="F" class="non_metal">F</option>
+                    <option value="Ne" class="noble_gas">Ne</option>
+                    <option value="Na" class="alkali_metal">Na</option>
+                    <option value="Mg" class="alkaline_earth_metal">Mg</option>
+                    <option value="Al" class="post_transition_metal">Al</option>
+                    <option value="Si" class="metalloid">Si</option>
+                    <option value="P" class="non_metal">P</option>
+                    <option value="S" class="non_metal">S</option>
+                    <option value="Cl" class="non_metal">Cl</option>
+                    <option value="Ar" class="noble_gas">Ar</option>
+                    <option value="K" class="alkali_metal">K</option>
+                    <option value="Ca" class="alkaline_earth_metal">Ca</option>
+                    <option value="Sc" class="transition_metal">Sc</option>
+                    <option value="Ti" class="transition_metal">Ti</option>
+                    <option value="V" class="transition_metal">V</option>
+                    <option value="Cr" class="transition_metal">Cr</option>
+                    <option value="Mn" class="transition_metal">Mn</option>
+                    <option value="Fe" class="transition_metal">Fe</option>
+                    <option value="Co" class="transition_metal">Co</option>
+                    <option value="Ni" class="transition_metal">Ni</option>
+                    <option value="Cu" class="transition_metal">Cu</option>
+                    <option value="Zn" class="transition_metal">Zn</option>
+                    <option value="Ga" class="post_transition_metal">Ga</option>
+                    <option value="Ge" class="metalloid">Ge</option>
+                    <option value="As" class="metalloid">As</option>
+                    <option value="Se" class="non_metal">Se</option>
+                    <option value="Br" class="non_metal">Br</option>
+                    <option value="Kr" class="noble_gas">Kr</option>
+                    <option value="Rb" class="alkali_metal">Rb</option>
+                    <option value="Sr" class="alkaline_earth_metal">Sr</option>
+                    <option value="Y" class="transition_metal">Y</option>
+                    <option value="Zr" class="transition_metal">Zr</option>
+                    <option value="Nb" class="transition_metal">Nb</option>
+                    <option value="Mo" class="transition_metal">Mo</option>
+                    <option value="Tc" class="transition_metal">Tc</option>
+                    <option value="Ru" class="transition_metal">Ru</option>
+                    <option value="Rh" class="transition_metal">Rh</option>
+                    <option value="Pd" class="transition_metal">Pd</option>
+                    <option value="Ag" class="transition_metal">Ag</option>
+                    <option value="Cd" class="transition_metal">Cd</option>
+                    <option value="In" class="post_transition_metal">In</option>
+                    <option value="Sn" class="post_transition_metal">Sn</option>
+                    <option value="Sb" class="metalloid">Sb</option>
+                    <option value="Te" class="metalloid">Te</option>
+                    <option value="I" class="non_metal">I</option>
+                    <option value="Xe" class="noble_gas">Xe</option>
+                    <option value="Cs" class="alkali_metal">Cs</option>
+                    <option value="Ba" class="alkaline_earth_metal">Ba</option>
+                    <option value="La" class="lanthanide">La</option>
+                    <option value="Ce" class="lanthanide">Ce</option>
+                    <option value="Pr" class="lanthanide">Pr</option>
+                    <option value="Nd" class="lanthanide">Nd</option>
+                    <option value="Pm" class="lanthanide">Pm</option>
+                    <option value="Sm" class="lanthanide">Sm</option>
+                    <option value="Eu" class="lanthanide">Eu</option>
+                    <option value="Gd" class="lanthanide">Gd</option>
+                    <option value="Tb" class="lanthanide">Tb</option>
+                    <option value="Dy" class="lanthanide">Dy</option>
+                    <option value="Ho" class="lanthanide">Ho</option>
+                    <option value="Er" class="lanthanide">Er</option>
+                    <option value="Tm" class="lanthanide">Tm</option>
+                    <option value="Yb" class="lanthanide">Yb</option>
+                    <option value="Lu" class="lanthanide">Lu</option>
+                    <option value="Hf" class="transition_metal">Hf</option>
+                    <option value="Ta" class="transition_metal">Ta</option>
+                    <option value="W" class="transition_metal">W</option>
+                    <option value="Re" class="transition_metal">Re</option>
+                    <option value="Os" class="transition_metal">Os</option>
+                    <option value="Ir" class="transition_metal">Ir</option>
+                    <option value="Pt" class="transition_metal">Pt</option>
+                    <option value="Au" class="transition_metal">Au</option>
+                    <option value="Hg" class="transition_metal">Hg</option>
+                    <option value="Tl" class="post_transition_metal">Tl</option>
+                    <option value="Pb" class="post_transition_metal">Pb</option>
+                    <option value="Bi" class="post_transition_metal">Bi</option>
+                    <option value="Po" class="metalloid">Po</option>
+                    <option value="At" class="metalloid">At</option>
+                    <option value="Rn" class="noble_gas">Rn</option>
+                    <option value="Fr" class="alkali_metal">Fr</option>
+                    <option value="Ra" class="alkaline_earth_metal">Ra</option>
+                    <option value="Ac" class="actinide">Ac</option>
+                    <option value="Th" class="actinide">Th</option>
+                    <option value="Pa" class="actinide">Pa</option>
+                    <option value="U" class="actinide">U</option>
+                    <option value="Np" class="actinide">Np</option>
+                    <option value="Pu" class="actinide">Pu</option>
+                    <option value="Am" class="actinide">Am</option>
+                    <option value="Cm" class="actinide">Cm</option>
+                    <option value="Bk" class="actinide">Bk</option>
+                    <option value="Cf" class="actinide">Cf</option>
+                    <option value="Es" class="actinide">Es</option>
+                    <option value="Fm" class="actinide">Fm</option>
+                    <option value="Md" class="actinide">Md</option>
+                    <option value="No" class="actinide">No</option>
+                    <option value="Lr" class="actinide">Lr</option>
+                    <option value="Rf" class="transition_metal">Rf</option>
+                    <option value="Db" class="transition_metal">Db</option>
+                    <option value="Sg" class="transition_metal">Sg</option>
+                    <option value="Bh" class="transition_metal">Bh</option>
+                    <option value="Hs" class="transition_metal">Hs</option>
+                    <option value="Mt" class="transition_metal">Mt</option>
+                    <option value="Ds" class="transition_metal">Ds</option>
+                    <option value="Rg" class="transition_metal">Rg</option>
+                    <option value="Cn" class="transition_metal">Cn</option>
+                    <option value="Nh" class="unknown">Nh</option>
+                    <option value="Fl" class="unknown">Fl</option>
+                    <option value="Mc" class="unknown">Mc</option>
+                    <option value="Lv" class="unknown">Lv</option>
+                    <option value="Ts" class="unknown">Ts</option>
+                    <option value="Og" class="unknown">Og</option>
+                </select>
+                <button id="add">Aggiungi</button>
+                <p id="added"></p>
+            </div>
+            <h4>Molecola:</h4>
+            <p id = "result"></p>
+        </div>
+        <button id="trova">Trova</button>
+        <div id="classi">
+            <button class="classes" onclick="non_metalli()" id="non_metalli">Non Metalli</button>
+            <button class="classes" onclick="gas_nobili()" id="gas_nobili">Gas Nobili</button>
+            <button class="classes" onclick="metalli_alcalini()" id="metalli_alcalini">Metalli Alcalini</button>
+            <button class="classes" onclick="metalli_alcalino_terrosi()" id="metalli_alcalino_terrosi">Metalli Alcalino-Terrosi</button>
+            <button class="classes" onclick="metalloidi()" id="metalloidi">Metalloidi</button>
+            <button class="classes" onclick="post_metalli()" id="post_metalli">Metalli di Post-Transizione</button>
+            <button class="classes" onclick="trans_metalli()" id="trans_metalli">Metalli di Transizione</button>
+            <button class="classes" onclick="lantanoidi()" id="lantanoidi">Lantanoidi</button>
+            <button class="classes" onclick="attinoidi()" id="attinoidi">Attinoidi</button>
+            <button class="classes" onclick="unknown_elements()" id="unknown_elements">Proprietà sconosciute</button>
+        </div>
+        <img src="periodic_table.png" alt="Periodic Table" id="periodic_table">
+        <script src="CompostiChimici2.js"></script>
+    </body>
+</html>
