@@ -44,9 +44,8 @@ h4 {
 #result {
     color: white;
     background-color: rgba(18, 136, 126, 0.733);
-    width: fit-content;
-    width: 5%;
     min-width: 5%;
+    width: fit-content;
     text-align: center;
     margin: 3px;
 }
